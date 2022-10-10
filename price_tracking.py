@@ -27,8 +27,9 @@ def display_result():
 
 
 def main():
+    time.sleep(10)
     while True:
-        # kb.press_and_release("shift+print_screen")
+        kb.press_and_release("shift+print_screen")
         p2 = display_result()
         print(f"Min: {str(p2[0]).rjust(10, ' ')}")
         print(f"Max: {str(p2[-1]).rjust(10, ' ')}")
